@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #head1{
+            /* LSCT - Line, Style, Color, Thickness */
+            /* In line : we have underline, overline, line-through, overline underline */
+            /* In style : we have solid, double, dotted, dashed, wavy, initial, inherit */
+            /* In color : we can give which color is needed */
+            /* In Thickness : How much thickness we required */
+            text-decoration:underline dotted red 3px;
+
+        }
+        #head2{
+            text-decoration-line: overline underline;
+            text-decoration-color: blue;
+            text-decoration-style: double;
+            text-decoration-thickness: 3px;
+            /* Direction will show the text from right to left, by dafault it is ltr */
+            direction:rtl
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">I love my parents</h1>
+    <h1 id="head2">I love my husband</h1>
+</body>
+</html>

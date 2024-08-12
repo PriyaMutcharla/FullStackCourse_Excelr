@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 2000px;
+            width: 100vw;
+            border: 1px solid;
+            background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            display: flex;
+            height: 250px;
+            width: 250px;
+            border: 1px solid black;
+            background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+        }
+        .bb{
+            height: 40px;
+            width: 40px;
+            border: 1px solid;
+            background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+        }
+        #box1{
+            justify-content: flex-start;
+        }
+        #box1{
+            justify-content: center;
+        }
+        #box3{
+            justify-content: flex-end;
+        }
+        #box4{
+            justify-content: space-around;
+        }
+        #box5{
+            justify-content: space-between;
+        }
+        #box6{
+            justify-content: space-evenly;
+        }
+        #box7{
+            align-items: flex-start;
+        }
+        #box8{
+            align-items: center;
+        }
+        #box9{
+            align-items: flex-end;
+        }
+        #box10{
+            align-items: center;
+            justify-content: center;
+        }
+        #box11{
+            align-items: end;
+            justify-content: center;
+        }
+        #box12{
+            flex-wrap: wrap;
+        }
+        #box13{
+            flex-wrap: wrap-reverse;
+        }
+        #box14{
+            flex-direction: column;
+        }
+        #box15{
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        #box16{
+            flex-direction: column-reverse;
+        }
+        #box17{
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }
+        #box18{
+            flex-direction: row;
+        }
+        #box19{
+            flex-direction: row-reverse;
+        }
+        #box20{
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+        #box21{
+            flex-direction: column-reverse;
+            flex-wrap: wrap-reverse;
+        }
+        #box21{
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- PARENT DIV -->
+    <div id="parent">
+
+        <div class="box" id="box1">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box2">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box3">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box4">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box5">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+        
+        <div class="box" id="box6">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box7">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+        
+        <div class="box" id="box8">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+        
+        <div class="box" id="box9">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box10">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+
+        <div class="box" id="box11">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+        </div>
+        
+        <div class="box" id="box12">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box13">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box14">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box15">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box16">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box17">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box18">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box19">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box20">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+        
+        <div class="box" id="box21">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+
+        <div class="box" id="box22">
+            <div class="bb">b1</div>
+            <div class="bb">b2</div>
+            <div class="bb">b3</div>
+            <div class="bb">b4</div>
+            <div class="bb">b5</div>
+            <div class="bb">b6</div>
+            <div class="bb">b7</div>
+            <div class="bb">b8</div>
+            <div class="bb">b9</div>
+            <div class="bb">b10</div>
+        </div>
+    </div>
+
+</body>
+</html>

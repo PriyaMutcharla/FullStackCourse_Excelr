@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* here 1st value is to move the text shadow horizontally */
+        /* if positive value then shadow will move horizontally right */
+        /* if negative value then shadow will move horizontally left */
+
+        /* here 2nd value is to move the text shadow vertically */
+        /* if positive value then shadow will move vertically down */
+        /* if negative value then shadow will move vertically up */
+
+        /* 3rd value is to blur the text shadow */
+        /* 4th value is to give the color to the shadow */
+        h1 {
+            text-shadow: 2px 2px 2px red, 3px 3px 3px blueviolet;
+        }
+
+        /* box shadow */
+        div{
+            height: 200px;
+            width: 200px;
+            border:2px solid black;
+            background-color: palegreen;
+            box-shadow: 3px 3px 50px 5px red;
+            /* 1st value left to right */
+            /* 2nd value top to bottom */
+            /* 3rd value transparancy */
+            /* 4th value applies to all sides */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text Shadow</h1>
+    <div></div>
+</body>
+
+</html>

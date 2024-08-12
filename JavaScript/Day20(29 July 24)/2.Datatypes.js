@@ -1,0 +1,12 @@
+console.log(typeof(10));
+console.log(typeof(10.12));
+console.log(typeof(-1));
+console.log(typeof('a'));
+console.log(typeof('alpha'));
+console.log(typeof("beta"));
+console.log(typeof("'alpha'"));
+console.log(typeof(true));
+console.log(typeof('true'));
+console.log(typeof null);
+var a;
+console.log(a);

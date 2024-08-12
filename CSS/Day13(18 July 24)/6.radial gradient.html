@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            
+        }
+        /* radial gradient by default it is in ellipse shape */
+        #box1{
+            width: 400px;
+            background-image: radial-gradient(red,blue,green);
+        }
+        /* we can change it to circle */
+        #box2{
+            width: 300px;
+            background-image: radial-gradient(circle,red,blue,green);
+        }
+        #box3{
+           
+            background-image: repeating-radial-gradient(violet,indigo,orange);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+</body>
+</html>

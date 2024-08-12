@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            border: 4px solid black;
+            border-radius: 50%;
+            animation-name: photo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+        @keyframes photo{
+            from{
+                transform: rotate(0deg);
+                background-image: url(https://media.istockphoto.com/id/1488944909/photo/environment-concept-green-glass-globe-with-a-tree-in-the-forest-with-sunlight-sustainability.webp?b=1&s=170667a&w=0&k=20&c=f89zMjUr7FldJzgS0p8mJyuTxBWgvhv0kBQL7fcSnjs=);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            to{
+                transform: rotate(360deg);
+                background-image: url(https://img.freepik.com/free-photo/colorful-bird-sits-branch-with-person-s-hand_188544-8849.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

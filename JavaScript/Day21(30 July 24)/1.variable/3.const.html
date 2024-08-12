@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declaration of const
+        //const a; we will get missing initializer in const keyword
+        const a=10;
+        console.log(a);
+
+        //redeclaration not possible in const variable
+        const b=20;
+        // const b=30;
+        console.log(b);
+
+        //reinitialization not possible in const variable
+        const c=20;
+        // c=30;
+        console.log(c);
+
+        //scope of let variable is block scope
+        console.log("start");
+        if(true){
+            let d=100;
+            console.log(d);
+        }
+        // console.log(d); outside block is not possible as it is a block scope
+
+        //hoisting
+        //hoisting is not possible
+        hosting="horse";
+        let hosting;
+        console.log(hosting);
+        //it will throw ReferenceError: Cannot access 'hosting' before initialization
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+Text formatting Properties:
+1. Spacing:
+   - text-indent : gives space infront of the para 
+   - word-spacing : gives the space btw words
+   - letter-spacing : gives space btw letters
+   - line-height : gives the sapce btw lines
+
+2. Text Decoration:
+   LSCT - Line, Style, Color, Thickness
+   - Line: In line we have underline, overline, line-through, overline underline
+   - Style: In style we have solid, double, dotted, dashed, wavy, initial, inherit
+      solid	- Default value. The line will display as a single line	
+      double - The line will display as a double line	
+      dotted - The line will display as a dotted line	
+      dashed - The line will display as a dashed line	
+      wavy - The line will display as a wavy line	
+      initial - Sets this property to its default value. Read about initial	
+      inherit - Inherits this property from its parent element. Read about inherit
+
+   - Color : In color we can give which color is needed
+   - Thickness : How much thickness we required
+
+3. Shadow
+4. Text-transform : lowercase, uppercase, capitalize
+5. White-space : used to place the lines formate for text
+6. text-align : place the text in particular allignment. 
+            

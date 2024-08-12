@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implicit typecasting
+
+        console.log(true+1);//2
+        console.log(typeof("true"+1));//true1 (string)
+        console.log(true+"true"+1);//truetrue1
+        console.log(1+1+true);//3
+        console.log(1+1+"true");//2true
+
+        var a="string";
+        var b=10;
+        var c=a+b;
+        console.log(c); //stringc
+        console.log(typeof(c)); //string+number = string
+
+        console.log(20+10); //30 (num+num=number)
+        console.log(false-1);// -1
+        console.log(true+"true"); //truetrue (boolean+string=string)
+        console.log(false-3); //-3
+        console.log('55'+55); //5555 (string+num=string)
+        console.log('hello'+10+"hii");//hello10hii
+        console.log(true-1);//0
+        console.log('55'-true);//54
+        console.log("123"-1);//122
+        console.log("true"-1);//NaN
+
+        
+    </script>
+</body>
+</html>

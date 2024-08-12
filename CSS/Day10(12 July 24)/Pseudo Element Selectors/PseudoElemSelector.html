@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            background-color: yellow;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+        }
+        p::first-letter{
+            color: magenta;
+        }
+        p::after{
+            content: "END OF PARA";
+            background-color: brown;
+        }
+        p::before{
+            content: "Starting of PARA ";
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ex porro totam quidem nesciunt in vero officia quas, ut repudiandae ipsam repellendus, placeat magni, exercitationem pariatur maxime reprehenderit magnam iste. Quidem delectus molestias, dolorum consequatur adipisci provident a officia debitis. Sequi nostrum minima sunt veritatis tempore, vero totam laborum mollitia.</p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+CSS Selectors:
+
+1. universal Selector (use * --> which will select all the elements)
+2. child selector (use > --> which will select the child elements of a given tag/element)
+3. adjacent selector (use + --> which will select the adjacent/next element of the given tag)
+4. descendant selector (use space --> which will select all the elements inside that particular
+   given tag/element)
+5. general sibling selector (use ~ --> which will select the elements after the given tag selected 
+   because they are siblings)
+6. id selector(#)
+7. class selector(.)
+
+Pseudo selectors:
+
+1. first-child (:first-child) --> select the first child of its parent.
+2. last-child (:last-child) --> select the last child of its parent.
+3. nth-child (li:nth-child(n)) --> select the nth(means all elements) child of its parent.
+   li:nth-child(3) --> if we specify number then it will select that number from the given list.
+4. nth-last-child (li:nth-last-child(n)) --> select the nth(means all elements) child of its parent.
+   li:nth-last-child(2) --> if we specify number then it will select that number from the given list in 
+   reverse order.
+5. nth-of-type(n) --> selects all elementsof same type if we want want to select all give n.
+   p:nth-of-type(2) --> selects the 2nd elements from all the given elementes.
+6. first-of-type (:first-of-type) --> selects the 1st element from all the given tag/elementes.
+7. last-of-type (:last-of-type) --> selects the last element from all the given tag/elementes.
+8. only-child(:only-child) --> selects the element only if it has one child.
+9. only-of-type(:only-of-type) -> selects the element only if it has one element same like onlychild.
+
+
+Pseudo-Element-Selectors:
+
+1. first line (::first-line) --> selects the 1st line of a block element.
+2. first letter (::first-letter) --> selects the 1st letter of a block element.
+3. before (::before) --> inserts content before an element.
+4. after (::after) --> inserts content after an element.
+
+Pseudo Elements:
+
+1. link --> this link is unvisited
+2. visited --> this link is already visited
+3. hover --> behaviour change after hovering on the element
+4. active --> this link is currently used

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Descendent selector denoted by space and it will select all the elements inside that particular
+        given tag/element */
+        div p{
+            /* so here all the p tags inside div tag will be applied */
+            background-color: palevioletred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Descendent Selector</h1>
+    <div>
+        <p>Lorem ipsum dolor sit.</p>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+        <section>
+            <h2>this is heading 2</h2>
+            <p>this is para inside section</p>
+            <div>
+                <p>This is para inside div</p>
+                <h2>this is heading 2 insode div</h2>
+            </div>
+        </section>
+    
+</body>
+</html>

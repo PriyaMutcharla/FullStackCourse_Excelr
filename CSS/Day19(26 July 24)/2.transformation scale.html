@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+        }
+        #parent{
+            height: 300px;
+            width: 300px;
+            background-color: grey;
+            border: 2px solid red;
+            opacity: 0.2px;
+        }
+        #child{
+            height: 300px;
+            width: 300px;
+            background-image: url(https://t3.ftcdn.net/jpg/06/10/68/10/360_F_610681083_M6XlAUkKj0I9ykA0Iz1ysOTCsNvpU5Vw.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* transform scale means check for the size. X means increase width and
+            Y means it will increase the height */
+            /* transform: scale(0.5); */
+            /* original position */
+            /* transform: scalez(0.5); */
+            /* X means width */
+            /* transform: scaleX(0.5); */
+            /* Y means height */
+            transform: scaleY(0.5);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+</body>
+</html>

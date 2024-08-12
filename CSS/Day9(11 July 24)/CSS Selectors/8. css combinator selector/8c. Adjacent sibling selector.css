@@ -1,0 +1,4 @@
+/* CSS using adjacent sibling selector(+) */
+#p2 + p {
+    background-color: blueviolet;
+}

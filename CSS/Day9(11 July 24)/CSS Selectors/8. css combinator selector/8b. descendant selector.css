@@ -1,0 +1,5 @@
+
+/* CSS using descendant selector(space) */
+#box p{
+    background-color: blue;
+}

@@ -1,0 +1,5 @@
+/* CSS using child selector(>) */
+
+#box > p {
+    background-color: aqua;
+}

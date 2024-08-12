@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reinitialization is possible in terms of let keyword
+        let a=10;
+        a=20;
+        console.log(a); //20 will be the output
+
+        //redeclaration is not possible
+        let b=20;
+        //let b=30; will throw an error
+        console.log(b);
+
+        //scope of let variable is block scope
+        console.log("start");
+        if(true){
+            let c=100;
+            console.log(c);
+        }
+        // console.log(c); outside block is not possible as it is a block scope
+
+
+        //hoisting
+        //hoisting is not possible
+        hosting="horse";
+        let hosting;
+        console.log(hosting);
+        //it will throw ReferenceError: Cannot access 'hosting' before initialization
+    </script>
+</body>
+</html>

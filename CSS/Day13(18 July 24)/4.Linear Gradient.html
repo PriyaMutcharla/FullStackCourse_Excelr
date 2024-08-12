@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* if want we can use website css-gradient and copy the code */
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px 10px 10px;
+        }
+        #box1{
+            background-image: linear-gradient(to bottom,red,green,blue);
+        }
+        #box2{
+            background-image: linear-gradient(to top, red,green,blue);
+        }
+        #box3{
+            background-image: linear-gradient(250deg,yellow,blue,red,indigo);
+        }
+        #box4{
+            background-image: linear-gradient(180deg,violet,indigo,blue,green,yellow,orange,red);
+        }
+        #box5{
+            background-image: linear-gradient(360deg,plum,palegreen,purple,lightblue,indigo);
+        }
+        #box6{
+            background-image: linear-gradient(yellow 30%,orange 20%,green 30%, red 40%);
+        }
+        #box7{
+            background-image: linear-gradient(orange,white,green);
+        }
+        #box8{
+            background-image: linear-gradient(90deg, rgba(120,0,45,0.8),rgba(170,67,89,0.4),rgba(120,67,89,0.2));
+        }
+        #box9{
+            background-image: repeating-linear-gradient(orange ,white,green);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8"></div>
+    <div class="box" id="box9"></div>
+</body>
+</html>

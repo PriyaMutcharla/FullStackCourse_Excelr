@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        let b=20;
+        let add=a+b;
+        let sub=a-b;
+        let mult=a*b;
+        let div=a/b;
+        let modulus=a%b;
+        let increment1 = ++a;
+        let increment2 = a++;
+        let increment3 = ++a;
+        let decrement1 = --b;
+        let decrement2 = b--;
+        let decrement3 = --b;
+        console.log(add); //30
+        console.log(sub); //-10
+        console.log(mult); //200
+        console.log(div); //1/2 -->0.5
+        console.log(modulus); //10
+        console.log(increment1); //11
+        console.log(increment2); //11
+        console.log(increment3); //13
+        console.log(decrement1); //19
+        console.log(decrement2); //19
+        console.log(decrement3); //17
+
+        let d=10;
+        let e=15;
+        let first = d++ + --e + --d + e++ + ++d;
+        console.log(first); // 10+14+10+14+11=59
+        console.log(d); //11
+        console.log(e); //15
+
+
+    </script>
+</body>
+</html>

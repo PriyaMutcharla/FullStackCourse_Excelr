@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Using thead,tbody,tfoot and rowspan & colspan -->
+    <!-- rowspan is used to merge two rows -->
+     <!-- colspan is used to merge two columns -->
+    <caption><b>Product Details:</b></caption>
+    <table border="1px solid">
+        <thead>
+            <tr>
+                <th>PId</th>
+                <th>PName</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>222</td>
+                <td>dove</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>333</td>
+                <td>Santoor</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <td>444</td>
+                <td>Sandal</td>
+                <td rowspan="2">55</td>
+            </tr>
+            <tr>
+                <td>555</td>
+                <td>Margo</td>
+                <!-- <td>55</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>Total Products:</th>
+            <th colspan="2">4</th>
+            <!-- <th></th> -->
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

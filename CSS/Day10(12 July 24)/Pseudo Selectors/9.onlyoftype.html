@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:only-of-type{
+            background-color: pink;
+             /* so here the element will be selected only if it has one child same like only child*/
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>This is para</p>
+        <p>This is para</p>
+        <span>
+            <p>This is para</p>
+            <h2>this is heading</h2>
+            <p>This is para</p>
+        </span>
+        <p>This is para</p>
+    </div>
+    <p>This is the only one para</p>
+</body>
+
+</html>

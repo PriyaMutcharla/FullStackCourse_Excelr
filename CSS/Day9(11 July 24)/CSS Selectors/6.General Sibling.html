@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* General sibling selector denoted by ~ */
+        section~p{
+            background-color: aqua;
+    /* so here the elements after the section tag selected because they are siblings */
+        }
+    </style>
+</head>
+<body>
+    <h1>Child Selector</h1>
+    <div>
+        <p>1st child from real wife</p>
+        <p>2nd child from real wife</p>
+        <section>
+            <p>child from another wife</p>
+        </section>
+        <p>it is sibling of section</p>
+    </div>
+    <div>
+    <p>3rd child from real wife</p>
+</div>
+    <p>4th child from another wife</p>
+</body>
+</html>

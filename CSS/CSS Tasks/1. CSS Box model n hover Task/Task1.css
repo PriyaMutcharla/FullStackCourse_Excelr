@@ -1,0 +1,52 @@
+.box {
+    height: 600px;
+    width: 350px;
+    border: 2px solid maroon;
+    /* background-color: rgb(123, 79, 109); */
+    /* background-color: hsla(199, 57%, 30%, 0.5); */
+    background-color: rgba(86, 15, 73, 0.3);
+    /* opacity: 0.9; */
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 10px 1px maroon;
+}
+
+.pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 50%;
+    box-shadow: 10px 10px 5px 1px white;
+
+}
+
+.pic:hover {
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px 1px black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 5px rgb(164, 17, 31);
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+}
+
+body {
+    background-image: url(./DSC_0045.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}

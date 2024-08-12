@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px 10px 10px;
+        }
+
+        #box1 {
+            background-image: conic-gradient(red,green,blue);
+        }
+        #box2{
+            background-image: conic-gradient(red 20%,green 20%,blue 20%,yellow);
+        }
+        #box3{
+            background-image: conic-gradient(violet 0deg 45deg,indigo 45deg 90deg,blue 90deg 135deg,green 135deg 180deg,yellow 180deg 225deg,orange 225deg 270deg,red 270deg 315deg);
+        }
+        #box4{
+            background-image: repeating-conic-gradient(yellow 0deg 10deg,red 10deg 20deg,blue 20deg 30deg);
+        }
+        #box5{
+            background-image: repeating-conic-gradient(violet,indigo,blue,green,yellow,orange,red);
+        }
+        #box6{
+            background-image: repeating-conic-gradient(violet 0deg 10deg,indigo 10deg 20deg,blue 20deg 30deg,green 30deg 40deg,yellow 40deg 50deg,orange 50deg 60deg,red 60deg 70deg);
+        }
+        #box7{
+            border-radius: 50%;
+            background-image: repeating-conic-gradient(white 0deg 7deg,blue 7deg 15deg);
+        }
+        #box8{
+            border: none;
+            height: 120px;
+            background-image: linear-gradient(180deg,orange,white,green);
+        }
+        #box9{
+            border: none;
+            height: 50px;
+            width: 50px;
+            margin-top: 35px;
+            margin-left: 75px;
+            border-radius: 50px;
+            background-image: repeating-conic-gradient(white 0deg 7deg,blue 7deg 15deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+    <div class="box" id="box5"></div>
+    <div class="box" id="box6"></div>
+    <div class="box" id="box7"></div>
+    <div class="box" id="box8">
+        <div class="box" id="box9"></div>
+    </div>
+</body>
+
+</html>

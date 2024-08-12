@@ -1,0 +1,8 @@
+/* CSS using general sibling selector(~) */
+#p2 ~ p {
+    background-color: blueviolet;
+}
+
+#s1 ~ span{
+    color: red
+}
