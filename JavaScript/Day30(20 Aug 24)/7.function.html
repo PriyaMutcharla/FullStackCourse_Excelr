@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //by using $
+        function f1(p1){
+            return "welcome to goa "+ `${p1}`;
+        }
+        let output = f1("satya");
+        document.write(output,"<br>");
+        let output1 = f1("archana");
+        document.write(output1,"<br>");
+
+        //returning number
+        function f2(){
+            return 10;
+        }
+        let op1 = f2(); //here in op1 the return value 10 will get stored
+        document.write(op1*op1,"<br>");
+
+        //using function expression
+        let op2 = function(){ //here we are storing a function in a variable called 'f2'
+            return 4; //passing the value to the function
+        }
+        let op3=op2(); //here storing the above entire function f2 in a new variable 'op2'
+        document.write(op3+op3,"<br>"); //calling the function by using variable
+
+        //using arrow function
+        let op4 = ()=>{
+            return 20;
+        }
+        let op5=op4();
+        document.write(op5*op5);
+
+    </script>
+</body>
+</html>

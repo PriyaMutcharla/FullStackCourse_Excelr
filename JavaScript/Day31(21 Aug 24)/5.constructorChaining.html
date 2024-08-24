@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //construction chaining
+        //inheritance : parent-child relationship
+        //inheritance is parent properties acquire inside in chile
+
+        function f1(){}
+        f1.prototype.var1="Radha";
+        function f2(){}
+        f2.prototype=Object.create(f1.prototype); //prototype chaining
+        f2.prototype.var2="Krishna";
+        let obj1 = new f2();
+        document.write(obj1.var1,"<br>",obj1.var2,"<br>");
+    </script>
+</body>
+</html>

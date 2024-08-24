@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //constructor function
+        function main(){
+            this.var1 = "this is variable";
+            this.fun=()=>{
+                document.write("function execution <br>")
+            }
+
+        }
+        let obj1 = new main();
+        document.write(obj1.var1,"<br>");
+        obj1.fun();
+
+        //create a class with two variables and two functions
+        function main1(){
+            this.v1 = "this is variable1";
+            this.v2 = "this is variable2";
+            this.fun1=()=>{
+                document.write("this is function1 <br>");
+            }
+            this.fun2=()=>{
+                document.write("this is function2 <br>");
+            }
+        }
+        let obj2 = new main1();
+        document.write(obj2.v1,"<br>",obj2.v2,"<br>")
+        obj2.fun1();
+        obj2.fun2();
+
+        //using return
+        function Class(){
+            this.var_one = "hii";
+            this.var_two = "world";
+
+            this.fun_one = function(){
+                return this.var_one;
+            }
+            this.fun_two = function(){
+                return this.var_two;
+            }
+        }
+        let object1 = new Class();
+        let output1=object1.fun_one();
+        document.write(output1,"<br>");
+        let output2=object1.fun_two();
+        document.write(output2,"<br>");
+
+        
+    </script>
+</body>
+</html>

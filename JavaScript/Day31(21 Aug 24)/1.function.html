@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //returning boolean value
+        function main(){
+            return true;
+        }
+        let third = main();
+        third?document.write("java <br>"):document.write("html <br>");
+        console.log(third);
+
+        //returning the array
+        function main1(){
+            return [10,20,30,40,50,60];
+        }
+        let a1=main1();
+        a1.forEach((Element,index)=>{
+            document.write(Element,"<br>");
+            document.write(index,"<br>");
+        })
+
+
+        //returning array by using function expression and iterate by using for of loop
+        function main2(){
+            return [100,200,300,400,500,600];
+        }
+        let a2=main2();
+        for(i of a2){
+            document.write(i, "<br>");
+        }
+
+        //returning array by using arrow function and iterate by using for in loop
+        let main3= ()=>{
+            return ['Priya','Bhagyavi','Mutcharla','Dont trust','anyone'];
+        }
+        let a3 = main3();
+        for(j in a3){
+            // document.write(j,"<br>");//it will print the index of a3
+            document.write(a3[j],"<br>"); //it will print the values of a3
+        }
+
+        //sum of numbers
+        function sum(num1,num2){
+            return num1+num2;
+        }
+        let s1=sum(10,20);
+        document.write(s1);
+
+    </script>
+</body>
+</html>

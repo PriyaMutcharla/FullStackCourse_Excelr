@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //dynamic input by using prototype
+        //prototyping is refering to the constructor function
+        function f1(){}
+            f1.prototype.var1 = "Welcome to india";
+            f1.prototype.var2 = "Welcome to Hyderabad";
+            let obj1 = new f1();
+            document.write(obj1.var1,"<br>",obj1.var2,"<br>");
+
+            //create a function by using prototype and three variables
+            function f2(){}
+            f2.prototype.var3 = "hii";
+            f2.prototype.var4 = "L.K.";
+            f2.prototype.var5 = "Ravi Teja";
+            let obj2 = new f2();
+            document.write(obj2.var3,"<br>",obj2.var4,"<br>",obj2.var5,"<br>");
+
+            //add a function by using prototype
+            function f3(){}
+            f3.prototype.fname = function(){
+                document.write("function prototype","<br>");
+            }
+            let obj3 = new f3();
+            obj3.fname();
+        
+    </script>
+</body>
+</html>

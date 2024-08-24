@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //by using finction declaration
+        //without parameters
+        function first(){
+            document.write("this is function declaration ", "<br>");
+        }
+        first();
+        first();
+        first();
+        first();
+
+        //with parameters
+        function second(param1,param2){
+            document.write(param1,param2,"<br>");
+        }
+        second(10,20); //1020
+        second(); //undefined undefined
+        second(10);//10 undefined
+        second(null,null);//null null
+
+        //function expression
+        //without parameters
+        let temp = function(){
+            document.write("function expression","<br>");
+        }
+        temp();
+        temp(); //we can call the function as many times we want
+        temp();
+        
+        //with parameters
+        let f2=function(param1,param2,param3){
+            document.write(param1,param2,param3,"<br>");
+        }
+        f2(10,20,30);
+        f2("react","mern","mean");
+        f2("mala");
+        f2(undefined,undefined,10);
+        f2(null,null,null);
+        f2(10,20);
+        
+        //arrow function
+        //without using parameters
+        let a1 = ()=>{
+            document.write("this is arrow function without parameters", "<br>");
+        }
+        a1();
+        //with using parameters
+        let a2 = (p1,p2)=>{
+            document.write(p1,p2, "<br>");
+        }
+        a2();
+        a2(10,29);
+
+        //Addition of numbers using arrow function
+        let add = (param1,param2)=>{
+            let result = param1+param2;
+            document.write("Addition of two numbers :" + result + "<br>");
+        }
+        add(10,20); //30
+        add(); //NaN (not a number)
+        add(10); //10+undefined = NaN
+        add(10,null); //10
+        add(undefined,undefined); //NaN
+        add("Priya","Bhagyavi"); //PriyaBhagyavi
+        add("Teja"); //TejaUndefined
+        document.write(typeof add); //function
+        add(true,10); //11
+        add(null,null); //0
+
+
+        //Addition of numbers using function expression
+        let addi = function(par1,par2){
+            let res = par1+par2;
+            document.write("Addition of two numbers :" + res + "<br>");    
+        }
+        addi(20,30); //50
+        addi(null,undefined);//NaN
+
+
+    //Addition of numbers using function declaration
+    function addition(p1,p2){
+        let result1 = p1+p2;
+        document.write("Addition of two numbers :" + result1 + "<br>")
+    }
+    addition(1,2);
+    addition(1,20);
+
+
+
+    //using arrow function
+    let operation1 = (p1,p2)=>{
+        r1=p1+p2;
+        r2=p1-p2;
+        r3=p1*p2;
+        r4=p1/p2;
+        r5=p1%p2;
+        document.write("operation code using arrow function <br>");
+        document.write("Addition of two numbers :" + r1 + "<br>");
+        document.write("Subtraction of two numbers :" + r2 + "<br>");
+        document.write("Multiplication of two numbers :" + r3 + "<br>");
+        document.write("Division of two numbers :" + r4 + "<br>");
+        document.write("Modulous of two numbers :" + r5 + "<br>");
+    }
+    operation1(10,20);
+
+
+    //using function expression
+    let operation2 = function(p1,p2){
+        r1=p1+p2;
+        r2=p1-p2;
+        r3=p1*p2;
+        r4=p1/p2;
+        r5=p1%p2;
+        document.write("operation code using function expression <br>");
+        document.write("Addition of two numbers :" + r1 + "<br>");
+        document.write("Subtraction of two numbers :" + r2 + "<br>");
+        document.write("Multiplication of two numbers :" + r3 + "<br>");
+        document.write("Division of two numbers :" + r4 + "<br>");
+        document.write("Modulous of two numbers :" + r5 + "<br>");
+    }
+    operation2(20,10);
+
+    //using function declaration
+    function operation3(p1,p2){
+        r1=p1+p2;
+        r2=p1-p2;
+        r3=p1*p2;
+        r4=p1/p2;
+        r5=p1%p2;
+        document.write("operation code using function expression <br>");
+        document.write("Addition of two numbers :" + r1 + "<br>");
+        document.write("Subtraction of two numbers :" + r2 + "<br>");
+        document.write("Multiplication of two numbers :" + r3 + "<br>");
+        document.write("Division of two numbers :" + r4 + "<br>");
+        document.write("Modulous of two numbers :" + r5 + "<br>");
+    }
+    // operation3(15,3);
+    //using prompt
+    operation3(p1=(Number(prompt("Enter the 1st value:"))),p2=(Number(prompt("Enter the 2nd value:"))))
+    </script>
+</body>
+</html>

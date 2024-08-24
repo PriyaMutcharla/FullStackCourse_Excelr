@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //using function expression
+        let add = function(num1,num2){ //the function is storing in a variable called "add"
+            return num1+num2; //giving the function expression saying what to do in the function
+        }
+        let output1 = add(10,20); //the output of function expression is getting stored in a variable 
+        document.write(output1,"<br>"); //30
+        let output2 = add(output1,30); //30+30=60
+        document.write(output2,"<br>"); //60
+
+
+        //using function declaration
+        function sub(n1,n2){
+            return n1-n2;
+        }
+        let o1 = sub(20,10);
+        document.write(o1,"<br>") //10
+        let o2 = sub(o1,30); //10-30= -20
+        document.write(o2,"<br>");
+
+        //using arrow function
+        let m1 = (p1,p2)=>{
+            return p1/p2;
+        }
+        let value1 = m1(20,10); //2
+        document.write(value1,"<br>");
+        let value2 = m1(value1,2); //2/2=1
+        document.write(value2,"<br>");
+        let value3 = m1(value2,0); //1/0=infinity
+        document.write(value3,"<br>");
+    </script>
+</body>
+</html>
